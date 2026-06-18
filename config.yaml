@@ -1,0 +1,28 @@
+data:
+  raw_path: data/raw/earthquakes.csv
+  processed_path: data/processed/features.csv
+  start_time: "2014-01-01"
+  end_time: "2026-05-26"
+  min_magnitude: 4.0
+  # Asia study boundary: Middle East to Japan, Russia/China to Indonesia.
+  min_latitude: -10
+  max_latitude: 60
+  min_longitude: 25
+  max_longitude: 150
+
+features:
+  grid_size_degrees: 2.0
+  window_days: 7
+  target_magnitude: 5.0
+
+model:
+  model_path: models/earthquake_risk_model.joblib
+  metrics_path: reports/metrics.txt
+  comparison_path: reports/model_comparison.csv
+  feature_importance_path: reports/figures/feature_importance.png
+  random_state: 42
+  test_fraction: 0.25
+
+analysis:
+  output_dir: reports/figures
+  summary_path: reports/asia_earthquake_summary.csv

@@ -1,0 +1,9 @@
+metric,value
+total_events,78813
+start_date,2014-01-01
+end_date,2026-05-25
+minimum_magnitude,4.0
+maximum_magnitude,7.8
+mean_magnitude,4.49
+mean_depth_km,68.94
+deepest_event_km,686.39
